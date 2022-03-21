@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <meta name="description" content="Web デザイナーeriのポートフォリオサイトです。">
+    <!--スマートフォン用表示領域を指定する-->
+    <meta name="viewport" content="width=device-width">
+    <!--Javascriptファイルへのリンクを記載する-->
+    <script src="./js/toggle
+    -menu.jp"></script>
+    <link href="./css/common.css" rel="stylesheet">
+    <link href="./css/index.css" rel="stylesheet">
+    <!-- Google fontのコードを埋め込む -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--↓↓ここからヘッダー↓↓-->
+    <header class="header">
+        <div class="header-inner">
+            <a class="header-logo" href="./index.html">
+                <img src="./images/common/logo.png" alt="portfolio">
+            </a>
+            <!--ハンバーガーメニューを作成する-->
+            <button class="toggle-menu-button"></button>
+            <div class="header-site-menu">
+                <nav class="site-menu">
+                    <ul>
+                        <!--順序を持たないリストを表す-->
+                        <li><a href="./concept.html">PROFILE</a></li>
+                        <li><a href="./works.html">WORKS</a></li>
+                        <li><a href="./access.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+    
+    <!--↓↓ここからメイン↓↓-->
+    <main class="main">
+
+     <!-- ここからファーストビューエリア -->
+     <div class="first-view">
+       <div class="first-view-text">
+           <h1>Good design<br>for your website.</h1>
+           <p>あなたのウェブサイトに優れたデザインを。</p>
+       </div>
+     </div>
+       <div class="lead">
+           <p>このウェブサイトはWebデザイナーeriの制作実績をまとめたポートフォリオサイトです。</p>
+           <div class="link-button-area">
+               <a class="link-button" href="./concept.html">PROFILE</a>
+           </div>
+       </div>
+
+       <!-- ここからWORKエリア-->
+       <div class="reccomended">
+           <h2>RECENT WORK</h2>
+           <!-- WORKリスト -->
+           <ul class="item-list">
+               <li>
+                   <img src="./images/index/bunner01.png" alt="バナー画像">
+                   <!-- 商品名と商品紹介を記述リストで記載する -->
+                  
+               </li>
+               <li>
+                <img src="./images/index/bunner02.png" alt="バナー画像">
+                   <!-- 商品名と商品紹介を記述リストで記載する -->
+               </li>
+                <li>
+                    <img src="./images/index/LP01.png" alt="バナー画像">
+                   <!-- 商品名と商品紹介を記述リストで記載する -->
+                   
+               </li>
+           </ul>
+           <div class="link-button-area">
+            <a class="link-button" href="./works.html">MORE</a>
+        </div>
+       </div>
+    </main>
+
+
+    <!--↓↓ここからフッター↓-->
+    <footer class="footer">
+        <nav class="site-menu">
+            <ul>
+                <!--順序を持たないリストを表す-->
+                <li><a href="./concept.html">PROFILE</a></li>
+                        <li><a href="./works.html">WORKS</a></li>
+                        <li><a href="./access.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <a class="footer-logo" href="./index.html">
+            <img src="./images/common/logo-header02.png" alt="portfolio">
+        </a>
+    
+        <!--コピーライト表記をする。＆copyで文字参照-->
+        <p class="copyright"><small>&copy;Eri Nakata</small></p>
+    </footer>
+
+</body>
+
+</html>

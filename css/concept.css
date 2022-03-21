@@ -1,0 +1,163 @@
+/* 文字コードを入力する */
+/* ※必ず毎回入力する！！ */
+@charset "utf-8";
+
+/* ここからタイトルエリア */
+.title {
+  height: 310px;
+  background-color: #ffb6c1;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  /* フレックスボックスを指定した上で縦並びにする。（要素の並び順や配置などの設定ができるようにするため） */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-shadow: 1px 1px 10px #4b2c14;
+}
+
+.title h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.title p {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+/* ここからコンセプトエリア */
+.feature {
+  display: flex;
+  /* 要素を両端いっぱいに配置させる */
+  justify-content: space-between;
+  width: 930px;
+  /* ９３０px以下のブラウザで見たときに、左右の余白を5％ずつ確保するため */
+  max-width: 90%;
+  margin-top: 75px;
+  margin-left: auto;
+  margin-right: auto;
+  /* 画像を親要素の上辺に揃えて配置する（文字の長さに合わせて画像を間伸びさせないため） */
+  align-items: flex-start;
+}
+
+.feature img {
+  width: 360px;
+}
+
+.feature-text {
+  max-width: 500px;
+  margin-right: 40px;
+}
+
+/* 横並びで逆順に配置する */
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.reverse .feature-text {
+  margin-right: 40px;
+  margin-right: 0;
+}
+
+.feature-text h2 {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.feature-text h2::after {
+  content:'';
+  display: block;
+  width: 36px;
+  height: 3px;
+  background-color: #000000;
+  margin-top: 20px;
+}
+
+.feature-text p {
+  font-size: 15px;
+  line-height: 28px;
+  margin-top: 25px;
+}
+
+.movie {
+  width: 930px;
+  max-width: 90%;
+  background-color: #f8f8f8;
+  padding: 50px 60px;
+  margin-top: 55px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.movie h2 {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.movie h2::after {
+  content: '';
+  display: block;
+  width: 36px;
+  height: 3px;
+  background-color: #000000;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.movie iframe {
+  display: block;
+  width: 100%;
+  height: 456px;
+  margin-top: 30px;
+}
+
+.movie p {
+  font-size: 15px;
+  line-height: 28px;
+  margin-top: 20px;
+  margin-bottom: 75px;
+}
+
+.footer {
+  margin-top: 100px;
+}
+
+/* ここからモバイル用のCSS */
+@media(max-width: 800px) {
+  .feature {
+    display: block;
+    width: 500px;
+    margin-top: 45px;
+  }
+
+  .feature-text {
+    margin-right: 0;
+  }
+
+  .reverse .feature-text {
+    margin-left: 0;
+  }
+
+  .feature img {
+    width: 100%;
+    height: auto;
+    margin-top: 25px;
+  }
+
+  .movie {
+    width: 500px;
+    padding: 30px 25px;
+  }
+
+  .movie iframe {
+    height: 240px;
+  }
+  
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>PROFILE | Portfolio</title>
+    <meta name="description" content="Webデザイナーeriのプロフィールページです。">
+    <!--スマートフォン用表示領域を指定する-->
+    <meta name="viewport" content="width=device-width">
+    <!--Javascriptファイル,CSSファイルへのリンクを記載する-->
+    <script src="./js/toggle-menu.jp"></script>
+    <link href="./css/common.css" rel="stylesheet">
+    <link href="./css/concept.css" rel="stylesheet">
+    <!-- Google fontのコードを埋め込む -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--↓↓ここからヘッダー↓↓-->
+    <header class="header">
+        <div class="header-inner">
+            <a class="header-logo" href="./index.html">
+                <img src="./images/common/logo.png" alt="portfolio">
+            </a>
+            <!--ハンバーガーメニューを作成する-->
+            <button class="toggle-menu-button"></button>
+            <div class="header-site-menu">
+                <nav class="site-menu">
+                    <ul>
+                        <!--順序を持たないリストを表す-->
+                        <li><a href="./concept.html">PROFILE</a></li>
+                        <li><a href="./works.html">WORKS</a></li>
+                        <li><a href="./access.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+    
+    <!--↓↓ここからメイン↓↓-->
+    <main class="main">
+        <div class="title">
+            <h1>PROFILE</h1>
+            <p>自己紹介</p>
+        </div>
+        <!-- コンセプトエリア -->
+        <div class="feature">
+            <div class="feature-text">
+                <h2>経歴</h2>
+                <p>立教大学観光学部卒業。<br>
+                IT企業でITコンサルタントとして2年携わる。<br>
+                広報デザイナーを担当することをきっかけに、WEBデザイナーを志す。<br>
+         
+            </p>
+            </div>
+            <img src="./images/concept/profile01.jpg" alt="プロフィール画像">
+        </div>
+        <div class="feature">
+            <div class="feature-text">
+                <h2>スキル</h2>
+                <p>Figma ★★★</p>
+                <p>HTML/CSS ★★★</p>
+                <p> Illustlater ★★☆</p>
+                <p> Ruby ★★☆</p>
+                <p> Photoshop ★☆☆</p>
+            </div>
+           
+        </div>
+        <div class="movie">
+            <h2>my hobby</h2>
+            <!-- Youtubeの動画を埋め込む -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Rpdi6zj54C8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>趣味でピアノを弾いている動画をYoutubeに上げています。動画の編集や音声の加工などを行っています。</p>
+            <img src="./images/concept/illust.jpg" alt="イラストの画像">
+            <p>趣味でイラストを制作しています。ツールはiPadを利用しています。
+            </p>
+        </div>
+    </main>
+    
+    <!-- footerここから -->
+    <footer class="footer">
+        <nav class="site-menu">
+            <ul>
+                <li><a href="./concept.html">PROFILE</a></li>
+                <li><a href="./works.html">WORKS</a></li>
+                <li><a href="./access.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <a class="footer-logo" href="./index.html">
+            <img src="./images/common/logo-header02.png" alt="portfolio">
+        </a>
+     
+        <p class="copyright"><small>&copy;Eri Nakata</small></p>
+    </footer>
+    <!-- footerここまで -->
+
+
+</body>
+
+</html>
